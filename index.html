@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simons Game </title>
+    <style>
+
+        .body_org{
+            background-color: rgb(119, 0, 95);
+        }
+
+        .success{
+            background-color: lime;
+        }
+
+        .fail{
+            background-color: red;
+        }
+
+        h1,h2,h3{
+            text-align: center;
+            color : rgb(255, 238, 0);
+        }
+
+        section{
+            height : 45vh;
+            width : 45vh;
+            margin : auto;
+            text-align: center;
+        }
+
+        .container{
+            height : 100%;
+            width : 100%;
+            border : 3px solid black;
+            border-radius: 8px;
+            background-color: brown;
+
+            display : grid;
+            grid-template-rows : repeat(2,1fr);
+            grid-template-columns : repeat(2,1fr);
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .container>div{
+            height : 90%;
+            width : 90%;
+            place-self: center;
+            border-radius: 8px;
+        }
+
+        .red{
+            background-color: rgb(255, 71, 39);
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .green{
+            background-color: green;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .blue{
+            background-color: blue;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .yellow{
+            background-color: yellow;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .glower{
+            background-color: rgb(255, 0, 247);
+            box-shadow: 0px 0px 10px pink;
+        }
+
+        .clicker{
+            background-color: rgb(3, 255, 171);
+            box-shadow: 0px 0px 10px rgb(160, 255, 223);
+        }
+
+        button{
+            background-color: purple;
+            color : azure;
+            border : none;
+            box-shadow: 0px 0px 10px white;
+            border-radius : 10px;
+            margin : 1vw;
+        }
+
+        button:active{
+            box-shadow: 0px 0px 30px white;
+        }
+    </style>
+</head>
+<body class="body_org">
+    <h1> <u>SIMONS GAME</u> </h1>
+    <section>
+        <h2></h2>
+        <h3> Press Any key Start the Game </h3>
+        <div class="container">
+             <div class="red"></div>
+             <div class="green"></div>
+             <div class="blue"></div>
+             <div class="yellow"></div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
